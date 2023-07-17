@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .blackBorder {
+        border: 1px solid black;
+      }
+      /* .items {
+        color: red;
+        font-weight: bold;
+      }
+      #theBananaElement {
+        color: orange;
+      } */
+    </style>
+  </head>
+  <body>
+    <form class="blackBorder">
+      <h1>Dado Tea Lunch Table</h1>
+      <p>Monday through Friday</p>
+      <p>11am - 3pm</p>
+      <p>$9.95 plus tax</p>
+      <p>Includes sandwich, snack and drink.</p>
+      <div class="blackBorder">
+        <p><strong>Order Information</strong></p>
+        <label for="name">Name</label>
+        <br />
+        <input type="text" name="name" id="name" />
+        <br />
+        <input type="radio" name="hereOrToGo" value="here" id="here" />
+        <label for="here">Here</label><br />
+        <input type="radio" name="hereOrToGo" value="togo" id="togo" />
+        <label for="togo">To Go</label>
+      </div>
+      <div class="blackBorder">
+        <label for="sandwich"><strong>Sandwiches</strong></label>
+
+        <div>
+          <label>Monday</label>
+          <br />
+          <input
+            type="radio"
+            name="mondaySpecial"
+            value="tomatoMozzarella"
+            id="tomatoMozzarella"
+          />
+          <label for="tomatoMozzarella">Tomato Mozzarella</label>
+          <br />
+          <input
+            type="radio"
+            name="mondaySpecial"
+            value="chickenSalad"
+            id="chickenSalad"
+          />
+          <label for="chickenSalad">Chicken Salad</label>
+        </div>
+
+        <div>
+          <label>Tuesday</label>
+          <br />
+          <input
+            type="radio"
+            name="tuesdaySpecial"
+            value="greekSaladWrap"
+            id="greekSaladWrap"
+          />
+          <label for="greekSaladWrap">Greek Salad Wrap</label>
+          <br />
+          <input
+            type="radio"
+            name="tuesdaySpecial"
+            value="totoWrap"
+            id="totoWrap"
+          />
+          <label for="totoWrap">Toto Wrap</label>
+        </div>
+
+        <div>
+          <label>Wednesday</label>
+          <br />
+          <input
+            type="radio"
+            name="wednesdaySpecial"
+            value="redPepperHummus"
+            id="redPepperHummus"
+          />
+          <label for="redPepperHummus">Red Pepper Hummus</label>
+          <br />
+          <input
+            type="radio"
+            name="wednesdaySpecial"
+            value="roastedTurkey"
+            id="roastedTurkey"
+          />
+          <label for="roastedTurkey">Roasted Turkey</label>
+        </div>
+
+        <div>
+          <label>Thursday</label>
+          <br />
+          <input
+            type="radio"
+            name="thursdaySpecial"
+            value="carrotGingerHummusWrap"
+            id="carrotGingerHummusWrap"
+          />
+          <label for="carrotGingerHummusWrap">Carrot Ginger Hummus Wrap</label>
+          <br />
+          <input
+            type="radio"
+            name="thursdaySpecial"
+            value="eggSalad"
+            id="eggSalad"
+          />
+          <label for="eggSalad">Egg Salad</label>
+        </div>
+
+        <div>
+          <label>Friday</label>
+          <br />
+          <input
+            type="radio"
+            name="fridaySpecial"
+            value="dadoWrap"
+            id="dadoWrap"
+          />
+          <label for="dadoWrap">Dado Wrap</label>
+          <br />
+          <input
+            type="radio"
+            name="fridaySpecial"
+            value="tunaSalad"
+            id="tunaSalad"
+          />
+          <label for="tunaSalad">Tuna Salad</label>
+        </div>
+        <div>
+          <input
+            name="sandwich"
+            type="checkbox"
+            name="glutenFreeBread"
+            id="glutenFreeBread"
+          />
+          <label for="sandwich">$0.75 extra for Gluten Free Bread</label>
+        </div>
+      </div>
+
+      <div class="blackBorder">
+        <h2>Snack</h2>
+        <input type="radio" id="apple" value="apple" name="snacks" />
+        <label for="apple">Apple</label>
+        <br />
+        <input type="radio" id="banana" value="banana" name="snacks" />
+        <label for="banana">Banana</label>
+        <br />
+        <input
+          type="radio"
+          id="potatoChips"
+          value="potatoChips"
+          name="snacks"
+        />
+        <label for="potatoChips">Potato Chips</label>
+      </div>
+
+      <div class="blackBorder">
+        <h2>Drink</h2>
+        <label for="drinks">Drinks</label>
+        <br />
+        <select name="drinks" id="drinks">
+          <optgroup label="Black Tea">
+            <option value="1">Hot Black Tea - Keemun</option>
+            <option value="2">Hot Black Tea - Decaf Keemun</option>
+            <option value="3">Iced Black Tea - Keemun</option>
+            <option value="4">Iced Black Tea - Decaf Keemun</option>
+          </optgroup>
+          <optgroup label="Green Tea">
+            <option value="5">Hot Green Tea - Sencha</option>
+            <option value="6">Hot Green Tea - Decaf</option>
+            <option value="7">Iced Green Tea - Sencha</option>
+            <option value="8">Iced Green Tea - Decaf</option>
+          </optgroup>
+          <optgroup label="Coffee">
+            <option value="9">Hot Coffee</option>
+            <option value="10">Hot Decaf Coffee</option>
+            <option value="11">Iced Coffee</option>
+            <option value="12">Iced Decaf Coffee</option>
+          </optgroup>
+          <optgroup label="Bubble Tea ($1.50 extra)">
+            <option value="13">Bubble Tea</option>
+          </optgroup>
+        </select>
+        <br />
+        <input
+          type="checkbox"
+          id="largeDrink"
+          value="largeDrink"
+          name="drinks"
+        />
+        <label for="largeDrink">Large Drink ($0.75 extra)</label>
+      </div>
+      <div>
+        <button type="submit">Place Order</button>
+      </div>
+      <!-- <div>
+        <input type="radio" name="course" value="platinum" id="platinum" />
+        <label for="platinum">I want PAPA Platinum</label><br />
+        <input
+          type="radio"
+          name="course"
+          value="diamond"
+          id="diamond"
+          checked
+        />
+        <label for="diamond">I want PAPA Diamond</label><br />
+      </div> -->
+    </form>
+
+    <!-- ======================= -->
+    <!-- INPUT AND FORM HANDLING -->
+    <!-- ======================= -->
+    <!-- the for label has to correspond with the input it's labeling through the ID -->
+    <!-- the name attribute groups the radio buttons together so only one can be selected -->
+    <!-- <h1>Sign up for website consultation.</h1>
+    <form autocomplete="on">
+      <div>
+        <label for="fname">First Name:</label>
+        <input id="fname" type="text" placeholder="Mary" />
+      </div>
+      <div>
+        <label for="lname">Last Name:</label>
+        <input id="lname" type="text" placeholder="Jane" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="text" placeholder="ex: abc123@vscode.com" />
+      </div>
+      <div>
+        <label for="phone">Telephone:</label>
+        <input id="phone" type="tel" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" />
+      </div>
+
+      <div>
+        <label for="level">What is your current skill level?</label>
+        <select name="level" id="level">
+          <option value="0">I'm a Beginner</option>
+          <option value="1">I'm a Intermediate</option>
+          <option value="2">I'm a expert</option>
+          <option value="3">I live in the matrix with Sonny</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="radio" name="course" value="platinum" id="platinum" />
+        <label for="platinum">I want PAPA Platinum</label><br />
+        <input
+          type="radio"
+          name="course"
+          value="diamond"
+          id="diamond"
+          checked
+        />
+        <label for="diamond">I want PAPA Diamond</label><br />
+      </div>
+
+      <div>
+        <label for="reason">Why do you want to join the PAPAFAM?</label>
+        <div>
+          <input id="love" type="checkbox" name="reason" value="love" />
+          <label for="love">I love React!</label><br />
+
+          <input
+            id="community"
+            type="checkbox"
+            name="reason"
+            value="community"
+          />
+          <label for="community">I want to join the community!</label><br />
+
+          <input id="job" type="checkbox" name="reason" value="job" />
+          <label for="job">I want to land a job this year</label><br />
+
+          <input id="coding " type="checkbox" name="reason" value="coding" />
+          <label for="coding">I want to learn coding</label><br />
+        </div>
+
+        <input type="file" />
+
+        <div>
+          <button class="resetBtn">RESET</button>
+          <button onclick="specialFunc()" type="submit">Submit</button>
+        </div>
+      </div>
+    </form> -->
+    <!-- Span is an inline element -->
+    <!-- <h1>Spans and inline elements</h1>
+    <p>How are they differenet to Div or block element?</p>
+
+    <p>
+      The <strong>color</strong> of ketchup is
+      <span class="important">red <i>and it taste so good</i></span
+      >.
+    </p> -->
+
+    <!-- <h1>About me page</h1> -->
+
+    <!-- the "/" refers to homepage directory -->
+    <!-- <a href="/">Click me to go back to the home page.</a> -->
+
+    <!-- make the image a link by wrapping it with anchor tag. -->
+    <!-- sample.jpg is relative to where the aboutme.html is - no file path necessary -->
+    <!-- <a href="google.com">
+      <img
+        src="/images/sample.jpg"
+        alt="An abstract image."
+        height="200"
+        width="100%"
+      />
+    </a>
+
+    <img
+      src="https://www.amazon.com/Primitives-Kathy-Box-Sign-Coffee/dp/B019JDJD42/ref=asc_df_B019JDJD42/?tag=hyprod-20&linkCode=df0&hvadid=191987674489&hvpos=&hvnetw=g&hvrand=16239145540282711501&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003904&hvtargid=pla-302253586031&psc=1"
+      alt="A picture of coffee decor"
+    />
+
+    <br />
+    <h1>Lists & Tables HTML Tutorial</h1> -->
+    <!-- ordered list are numbered list -->
+    <!-- <h2>This is my ordered list.</h2>
+    <ol>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+    </ol>
+
+    <br /> -->
+    <!-- unordered list - no numbers -->
+    <!-- <h2>This is my unordered list.</h2>
+    <ul>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+    </ul>
+
+    <br /> -->
+    <!-- dl - definition list -->
+    <!-- dt - defined term -->
+    <!-- dd - definition -->
+    <!-- definition list are good for SEO -->
+    <!-- <h2>This is my definition list.</h2>
+    <dl>
+      <dt>Term 1</dt>
+      <dd>Definition 1</dd>
+      <dt>Term 2</dt>
+      <dd>Definition 2</dd>
+    </dl>
+
+    <br /> -->
+    <!-- define the table w/ <table> -->
+    <!-- first - define table elements by row <tr> -->
+    <!-- second - define table data <td> -->
+    <!-- <h2>Tables</h2>
+    <table>
+      <tr>
+        <td>Row 1 - Column 1</td>
+        <td>Row 1 - Column 2</td>
+        <td>Row 1 - Column 3</td>
+      </tr>
+      <tr>
+        <td>Row 2 - Column 1</td>
+        <td>Row 2 - Column 2</td>
+        <td>Row 2 - Column 3</td>
+      </tr>
+    </table>
+
+    <br /> -->
+    <!-- Column span example -->
+    <!-- <table style="width: 100%">
+      <tr>
+        <th>Course Name</th>
+        <th colspan="4">Tier</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Beginner</td>
+        <td>Intermediate</td>
+        <td>Advanced</td>
+        <td>Expert</td>
+      </tr>
+    </table>
+
+    <br /> -->
+    <!-- row span example -->
+    <!-- <table style="width: 100%">
+      <tr>
+        <th>Course Name</th>
+        <td>Zero to Full Stack</td>
+      </tr>
+      <tr>
+        <th rowspan="4">Tiers</th>
+        <td>Papa Silver</td>
+      </tr>
+      <tr>
+        <td>PAPA Gold</td>
+      </tr>
+      <tr>
+        <td>PAPA Platinum</td>
+      </tr>
+      <tr>
+        <td>PAPA Diamond</td>
+      </tr>
+    </table>
+
+    <br />
+    <table> -->
+    <!-- thead is where we put a row of headings -->
+    <!-- <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="font-weight: 100">
+          <td>Total</td>
+          <td>$300</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br /> -->
+    <!-- DIV's are dividers that separate content -->
+    <!-- ID points to 1 element while class points to a group of elements -->
+    <!-- <h1>Shopping List</h1>
+
+    <div class="items">
+      <p id="theBananaElement">Banana</p>
+      <p>Apple</p>
+      <p>Orange</p>
+      <p>Watermelon</p>
+    </div>
+
+    <div class="items">
+      <p>Chicken</p>
+      <p>Turkey</p>
+    </div>
+
+    <div class="items">
+      <p>Water</p>
+      <p>Lemonade</p>
+    </div>
+    <br /> -->
+  </body>
+</html>
